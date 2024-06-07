@@ -1,9 +1,13 @@
-function App() {
-	const [count, setCount] = useState(0)
+import { MyButton } from "./components/MyButton/MyButton";
+import { Profile } from "./components/Profile/Profile.tsx";
 
+
+function App() {
 	return (
 		<>
-			Hello world! 
+			<link rel="stylesheet" href="/style.css"/>
+			<MyButton/>
+			<div>Data about you: {Profile("Иван", "Воронин", "/userImg.jpg")}</div>
 		</>
 		)
 }
