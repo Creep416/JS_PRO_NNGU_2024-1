@@ -9,9 +9,10 @@ const Profile = (fName, lName, imgUrl) => {
   return (
     <>
       <div className={classes.frame}>
-        <img className={classes.pic} src={imgUrl} alt="" />
-        <div className={classes.name}>{fName + " " + lName[0]}</div>
-        {(script = move((up = 0), (right = 5)))}
+        <img className={classes.pic} src={userObj.imageUrl} alt="" />
+        <div className={classes.name}>
+          {userObj.firstName + " " + userObj.lastName}
+        </div>
       </div>
     </>
   );
